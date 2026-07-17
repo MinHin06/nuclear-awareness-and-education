@@ -1,0 +1,40 @@
+.performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.performance-table th,
+.performance-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.performance-table th {
+    background-color: #0A3D62;
+    color: #fff;
+}
+
+.performance-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0A3D62;
+    border: 1px solid #0A3D62;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #2ECC71;
+    color: #fff;
+    border-color: #2ECC71;
+}

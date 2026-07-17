@@ -1,0 +1,271 @@
+/* ===== Global ===== */
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#acc9ff;
+  color:#0d0e0d;
+}
+
+/* ===== Top Header ===== */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 14px;
+  background:#ffffff;
+  border-bottom:1px solid #e6e6e6;
+}
+
+.logout-top{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:8px 14px;
+  border-radius:999px;
+
+  background:#ec516b;          /* button background */
+  border:1px solid #0e0e0e;    /* button border */
+
+  font-size:13px;
+  font-weight:600;
+
+  color:#222 ;       
+  text-decoration:none ;
+
+  cursor:pointer;
+}
+
+.logout-top:hover{
+  background:#eae4e4;
+}
+
+.logout-top:active{
+  transform: scale(0.98);
+}
+
+
+
+.topbar-left{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo{
+  width:36px;
+  height:36px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.site-title{
+  font-size:14px;
+  font-weight:bold;
+}
+
+.topbar-right{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.icon-btn{
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  font-size:18px;
+}
+
+/* ===== Page Container (DESKTOP FIRST) ===== */
+/* ===== Page Container (Responsive) ===== */
+.page{
+  width:100%;
+  max-width:1100px;   /* limit only on big desktop */
+  margin:0 auto;
+  padding:24px;
+  box-sizing:border-box;
+}
+
+
+/* ===== Headings ===== */
+.welcome-wrap{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+
+
+/* ===== Pill Navigation Buttons ===== */
+.quick{
+  margin-top:12px;
+  background:#fff;
+  border:1px solid #e6e6e6;
+  border-radius:12px;
+  padding:12px;
+}
+
+
+.btn-row{
+  display:flex;
+  gap:12px;
+  margin-bottom:10px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.btn-row:last-child{
+  margin-bottom:0;
+}
+
+.navbtn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:14px 16px;
+  background:#a3f7ae;
+  border:2px solid #0e0d0d;
+  border-radius:999px;
+
+  text-decoration:none;
+  color:#222;
+  font-size:15px;
+  font-weight:700;
+
+}
+
+.navbtn:hover{
+  background:#153be2;
+}
+
+.navbtn:active{
+  transform:scale(0.97);
+}
+
+.navbtn{
+  min-width:140px;
+  text-align:center;
+}
+
+
+/* ===== Content Sections ===== */
+/* ===== Big Frame for Dashboard Content ===== */
+.frame{
+  width:100%;
+  margin-top:20px;
+  background:#ffffff;
+  border:1px solid #d9d9d9;
+  border-radius:16px;
+  padding:20px;
+  
+  max-width:900px;      /* align visually with quick box */
+  margin-left:auto;
+  margin-right:auto;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+
+/* Each section inside the frame */
+.section-card{
+  padding:16px 0;
+  border-bottom:1px solid #ededed;
+}
+
+.section-card:last-child{
+  border-bottom:none;
+}
+
+.section-card h3{
+  margin:0 0 12px 0;
+  font-size:16px;
+  font-weight:700;
+}
+
+.section-card p{
+  margin:8px 0;
+  font-size:14px;
+  line-height:1.4;
+}
+
+
+.item{
+  background:#f0f0f0;
+  border:1px solid #dedede;
+  border-radius:12px;
+  padding:12px;
+  margin-top:10px;
+  font-size:13px;
+}
+
+.small{
+  font-size:12px;
+  color:#444;
+  margin-top:6px;
+}
+
+
+
+/* ===== Footer ===== */
+.footer{
+  text-align:center;
+  padding:14px;
+  color:#555;
+}
+
+/* ===== MOBILE VERSION ===== */
+@media (max-width:600px){
+  .page{
+    width:100%;
+    max-width:none;
+    padding:14px;
+  }
+
+  .frame{
+    width:auto;
+    padding:14px;
+    margin-left:-14px;
+    margin-right:-14px;
+    border-radius:14px;
+  }
+
+  .topbar{
+    flex-wrap:wrap;
+  }
+
+  .topbar-left{
+    width:100%;
+  }
+
+  .topbar-right{
+    width:100%;
+    margin-top:6px;
+    justify-content:flex-end;
+  }
+
+  .site-title{
+    white-space:normal;
+    line-height:1.2;
+  }
+
+  .btn-row{
+    justify-content:center;
+  }
+
+  .navbtn{
+    font-size:12px;
+    padding:9px 14px;
+  }
+
+  .navbtn{
+    width:45%;
+    min-width:unset;
+  }
+
+}
+
+
+
+
+

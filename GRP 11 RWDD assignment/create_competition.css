@@ -1,0 +1,78 @@
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: "Times New Roman", sans-serif;
+}
+
+/* Question card styling */
+.question-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* MCQ and structured answer sections */
+.mcq-options, .structured-answer {
+    margin-top: 10px;
+}
+
+/* Labels and inputs */
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 3px 0 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Small text styling */
+.small-text {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0A3D62;
+    border: 1px solid #0A3D62;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #2ECC71;
+    color: #fff;
+    border-color: #2ECC71;
+}
+
+

@@ -1,0 +1,146 @@
+/* Upload Content Form */
+.upload-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 650px;
+    margin: 0 auto 30px auto; /* CENTER */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+
+.upload-form label {
+    display: block;
+    font-weight: bold;
+    color: #0A3D62;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.upload-form input[type="text"],
+.upload-form input[type="file"],
+.upload-form select,
+.upload-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.upload-form textarea {
+    resize: vertical;
+}
+
+.upload-form .btn {
+    background-color: #0A3D62;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.upload-form .btn:hover {
+    background-color: #2ECC71;
+}
+
+/* Uploaded Content Cards */
+.discussion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.discussion-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discussion-card h3 {
+    font-size: 18px;
+    color: #0A3D62;
+    margin-bottom: 5px;
+}
+
+.discussion-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.discussion-card a {
+    color: #2ECC71;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discussion-card a:hover {
+    text-decoration: underline;
+}
+
+.discussion-card small {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Search box */
+.search-box {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* Content description */
+.content-desc {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Small button */
+.small-btn {
+    background: none;
+    border: none;
+    color: #0A3D62;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.small-btn:hover {
+    text-decoration: underline;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0A3D62;
+    border: 1px solid #0A3D62;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #2ECC71;
+    color: #fff;
+    border-color: #2ECC71;
+}

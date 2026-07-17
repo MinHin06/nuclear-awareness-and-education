@@ -1,0 +1,90 @@
+.main{
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 10px 16px;
+}
+
+.subtitle{
+  margin-top: 6px;
+  color: #444;
+}
+
+.section-title{
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.search-wrap{
+  margin: 16px 0 10px;
+}
+
+.search-box{
+  width: 100%;
+  max-width: 520px;
+  padding: 12px 14px;
+  border: 1px solid #222;
+  border-radius: 12px;
+  background: #fff;
+  outline: none;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.card{
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+}
+
+.card h3{
+  margin: 0 0 8px;
+}
+
+.desc{
+  margin: 0 0 10px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #222;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  background: #a6ffb3;
+  color: #111;
+}
+
+.btn:hover{
+  background: #ffffff;
+}
+
+.empty{
+  color: #333;
+  background: rgba(255,255,255,0.5);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.back-btn{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 14px;
+  border: 1px solid #222;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #fff;
+  color: #111;
+}
+
+.back-btn:hover{
+  background: #f2f2f2;
+}

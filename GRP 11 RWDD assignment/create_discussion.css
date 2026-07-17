@@ -1,0 +1,76 @@
+/* Create Discussion Page */
+.discussion-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.discussion-form label {
+    display: block;
+    font-weight: bold;
+    color: #0A3D62;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.discussion-form input[type="text"],
+.discussion-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.discussion-form textarea {
+    resize: vertical;
+}
+
+.discussion-form .btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #0A3D62;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.discussion-form .btn:hover {
+    background-color: #2ECC71;
+}
+
+.discussion-post {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.post-info {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0A3D62;
+    border: 1px solid #0A3D62;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #2ECC71;
+    color: #fff;
+    border-color: #2ECC71;
+}

@@ -1,0 +1,91 @@
+.main{
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 10px 16px;
+}
+
+.meta{
+  margin-top: 6px;
+  color: #333;
+}
+
+.msg{
+  margin: 14px 0;
+  padding: 12px 14px;
+  border: 1px solid #222;
+  background: #e9ffe9;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.closed{
+  padding: 12px 14px;
+  border: 1px solid #222;
+  background: #fff3f3;
+  border-radius: 12px;
+}
+
+.q-card{
+  background: #fff;
+  border: 1px solid #222;
+  border-radius: 16px;
+  padding: 14px;
+  margin: 12px 0;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.08);
+}
+
+.q-card h3{
+  margin: 0 0 10px;
+}
+
+.opt{
+  display: block;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.opt input{
+  margin-right: 8px;
+}
+
+.txt{
+  width: 100%;
+  min-height: 110px;
+  padding: 10px 12px;
+  border: 1px solid #222;
+  border-radius: 12px;
+  outline: none;
+  resize: vertical;
+}
+
+.submit-btn{
+  margin-top: 14px;
+  padding: 12px 16px;
+  border: 1px solid #222;
+  border-radius: 999px;
+  background: #a6ffb3;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.submit-btn:hover{
+  background: #fff;
+}
+
+.back-btn{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 14px;
+  border: 1px solid #222;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #fff;
+  color: #111;
+}
+
+.back-btn:hover{
+  background: #f2f2f2;
+}

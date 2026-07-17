@@ -1,0 +1,121 @@
+
+/* -------- CSS variables (light theme default) -------- */
+:root {
+  --bg: #f4f6f8;
+  --text: #111827;
+  --header-bg: #1e3a8a;
+  --header-text: #ffffff;
+  --card-bg: #ffffff;
+  --card-shadow: 0 0 8px rgba(0,0,0,0.1);
+  --button-bg: #1e40af;
+  --button-bg-hover: #1d4ed8;
+  --button-text: #ffffff;
+  --muted: #444;
+  --error: #e11d48;
+  --border: #e5e7eb;
+}
+
+/* -------- Dark theme overrides -------- */
+body.dark {
+  --bg: #0b1020;
+  --text: #e5e7eb;
+  --header-bg: #0f172a;
+  --header-text: #e5e7eb;
+  --card-bg: #141a2a;
+  --card-shadow: 0 0 0 rgba(0,0,0,0);
+  --button-bg: #334155;
+  --button-bg-hover: #475569;
+  --button-text: #e5e7eb;
+  --muted: #cbd5e1;
+  --error: #fb7185;
+  --border: #293241;
+}
+
+/* -------- Base styles using variables -------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  background: transparent;
+  color: var(--header-text);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Match the register.html container class */
+.form-box {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border);
+}
+
+.form-box h2 {
+  margin-top: 0;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.form-box button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box button[type="submit"]:hover {
+  background-color: var(--button-bg-hover);
+}
+
+#reg-message {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 16px 0;
+}

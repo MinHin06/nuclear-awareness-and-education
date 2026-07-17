@@ -1,0 +1,149 @@
+/* Page title */
+h2 {
+    margin: 20px 0 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* ===== Search bar ===== */
+.module-search {
+    margin-bottom: 20px;
+}
+
+.module-search input[type="text"] {
+    padding: 8px 10px;
+    width: 220px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    outline: none;
+}
+
+.module-search input[type="submit"] {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #0e0e0e;
+    background: #b5ffbf;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.module-search a {
+    margin-left: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #333;
+}
+
+/* ===== Grid layout ===== */
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .module-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Module Card ===== */
+.module-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.module-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.module-meta {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.module-progress {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+/* ===== Buttons ===== */
+.module-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid #0e0e0e;
+    background: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+}
+
+.btn-done {
+    background: #aaffb7;
+}
+
+.btn-done:hover {
+    background: #8df0a0;
+}
+
+/* Completed label */
+.done-tag {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: #d9ffd9;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a7f37;
+}
+
+/* ===== Back button ===== */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid #0e0e0e;
+    background: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.back-btn:hover {
+    background: #f1f1f1;
+}
+
+/*Module view notes page*/
+.note-box {
+    background: #f9fbff;
+    border: 1px solid #dbe3ff;
+    padding: 16px;
+    border-radius: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 20px;
+}

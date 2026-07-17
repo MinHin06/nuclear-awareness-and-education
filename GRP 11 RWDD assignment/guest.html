@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuclear Awareness | Guest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="guest.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <h1>Nuclear Awareness & Clean Energy</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#content">Educational Content</a>
+      <a href="#register">Register</a>
+    </nav>
+
+    <!-- NEW: Theme toggle button (same pattern as login) -->
+    <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">Dark</button>
+
+    <!-- Back to login -->
+    <a href="login.html">
+      <button>Back to Login</button>
+    </a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome, Guest</h2>
+    <p>Explore nuclear awareness and clean energy education with read-only access.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h3>About This Platform</h3>
+    <p>
+      This platform is designed to promote awareness and understanding of nuclear energy
+      and clean energy sustainability. Guests can browse educational content provided
+      by professionals without logging in.
+    </p>
+  </section>
+
+  <!-- Educational Content Section -->
+  <section id="content" class="section">
+    <h3>Public Educational Content</h3>
+
+    <div class="card">
+      <h4>🌍 What is Nuclear Energy?</h4>
+      <p>
+        Nuclear energy is a clean energy source produced by splitting atoms.
+        It provides large amounts of electricity with low carbon emissions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>⚡ Clean Energy Sustainability</h4>
+      <p>
+        Clean energy reduces environmental impact and supports sustainable development
+        for future generations.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>📊 Benefits & Challenges</h4>
+      <p>
+        Nuclear energy offers high efficiency but requires strict safety and waste
+        management measures.
+      </p>
+    </div>
+  </section>
+
+  <!-- Registration Prompt -->
+  <section id="register" class="section register">
+    <h3>Want Full Access?</h3>
+    <p>Register as a participant to join quizzes and discussions.</p>
+    <a href="register.html">
+      <button>Register Now</button>
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Nuclear Awareness & Clean Energy Education</p>
+    <p>Guest View – Read Only Access</p>
+  </footer>
+
+  <script src="guest.js"></script>
+
+  <!-- NEW: Tiny theme script (mirrors login behavior) -->
+  <script>
+    (function () {
+      const THEME_KEY = 'theme'; // 'light' or 'dark'
+      const btn = document.getElementById('theme-toggle');
+
+      // Apply saved theme early
+      const saved = localStorage.getItem(THEME_KEY);
+      if (saved === 'dark') {
+        document.body.classList.add('dark');
+        if (btn) btn.textContent = 'Light';
+      }
+
+      // Toggle on click
+      if (btn) {
+        btn.addEventListener('click', function () {
+          const nowDark = document.body.classList.toggle('dark');
+          localStorage.setItem(THEME_KEY, nowDark ? 'dark' : 'light');
+          btn.textContent = nowDark ? 'Light' : 'Dark';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+/* Upload Module Form */
+.module-form {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 650px;
+    margin: 0 auto 30px auto; /* center the form */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.module-form label {
+    display: block;
+    font-weight: bold;
+    color: #0A3D62;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.module-form input[type="text"],
+.module-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: 200px;       /* <-- makes it bigger */
+    resize: vertical;    /* <-- allows user to resize vertically */
+}
+
+
+.module-form .btn {
+    background-color: #0A3D62;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.module-form .btn:hover {
+    background-color: #2ECC71;
+}
+
+/* Module Cards Grid */
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual Module Card */
+.module-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.module-card:hover {
+    transform: translateY(-3px);
+}
+
+.module-card h3 {
+    font-size: 18px;
+    color: #0A3D62;
+    margin-bottom: 8px;
+}
+
+.module-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.module-card small {
+    font-size: 12px;
+    color: #666;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #0A3D62;
+    border: 1px solid #0A3D62;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #2ECC71;
+    color: #fff;
+    border-color: #2ECC71;
+}

@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Register Page</title>
+
+  <!-- NEW: use a dedicated CSS for register that mirrors login.css -->
+  <link rel="stylesheet" href="register.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<header>
+  <h1>Nuclear Awareness & Clean Energy</h1>
+  <!-- NEW: Theme toggle button (same as login) -->
+  <button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">Dark</button>
+</header>
+
+<div class="form-box">
+  <h2>Register</h2>
+  <!-- IMPORTANT: onsubmit calls the function that exists in register.js -->
+  <form onsubmit="registerUser(event)">
+    <label>First Name:</label>
+    <input type="text" id="first_name" name="first_name" required />
+    <label>Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required />
+    <label>Username:</label>
+    <input type="text" id="username" name="username" required />
+    <label>Email:</label>
+    <input type="email" id="email" name="email" required />
+    <label>Password:</label>
+    <input type="password" id="password" name="password" required />
+    <label>Confirm Password:</label>
+    <input type="password" id="confirm_password" required />
+    <label>Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+    <!-- Role is forced to Student on the server, so we don't show a picker -->
+    <label>Bio (optional):</label>
+    <textarea id="bio" name="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+    <button type="submit">Register</button>
+    <p id="reg-message"></p>
+  </form>
+  <br />
+  <a href="guest.html">Back to Guest Page</a>
+</div>
+
+<footer>
+  <p>© 2026 Nuclear Awareness & Clean Energy Education</p>
+</footer>
+
+<script src="register.js"></script>
+
+<!-- NEW: Tiny theme script (mirrors the behavior from login) -->
+<script>
+  (function () {
+    const THEME_KEY = 'theme'; // 'light' or 'dark'
+    const btn = document.getElementById('theme-toggle');
+
+    // Apply saved theme early
+    const saved = localStorage.getItem(THEME_KEY);
+    if (saved === 'dark') {
+      document.body.classList.add('dark');
+      if (btn) btn.textContent = 'Light';
+    }
+
+    // Toggle on click
+    if (btn) {
+      btn.addEventListener('click', function () {
+        const nowDark = document.body.classList.toggle('dark');
+        localStorage.setItem(THEME_KEY, nowDark ? 'dark' : 'light');
+        btn.textContent = nowDark ? 'Light' : 'Dark';
+      });
+    }
+  })();
+</script>
+</body>
+</html>
