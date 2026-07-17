@@ -20,4 +20,5 @@ The Nuclear Awareness & Education Website is a responsive educational website de
 - PHP
 
 ##Authors
-- CHO MIN HIN GitHub: https://github.com/MinHin06
+- CHO MIN HIN
+  - GitHub: https://github.com/MinHin06
