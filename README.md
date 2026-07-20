@@ -24,3 +24,5 @@ The Nuclear Awareness & Education Website is a responsive educational website de
   - GitHub: https://github.com/MinHin06
 - GOH BING HONG
   - GitHub: https://github.com/RaringBH
+- CHIN YONG HENG
+  - GitHub: https://github.com/Hennchin
